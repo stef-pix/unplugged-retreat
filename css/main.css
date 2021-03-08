@@ -114,6 +114,9 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;  
   flex-flow: row wrap;
+
+  width: 100%;
+  margin: 0;
 }
 
 header nav {
@@ -149,9 +152,17 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
+.features p {
+  margin: 0;
+}
+
 .reviews h3 {
   width: 91%;
   margin: 228px 0;
+}
+
+footer p {
+  margin: 0;
 }
 
 
