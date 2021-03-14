@@ -87,6 +87,59 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+ 
+html {
+  font-size: 16px; 
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em; 
+}
+ 
+ul, 
+ol {
+  list-style-type: none;
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+ 
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  line-height: 1.25em;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+}
+ 
+p {
+  
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+ 
+}
+ 
+.content-wrapper {
+ 
+}
+
  /* -------------------- Base Header - Footer Styles -------------------- */
 header,
 footer {
@@ -98,7 +151,7 @@ footer {
 
 .content-wrapper {
   width: 100%;
-  margin: 0;
+  margin: 0px;
 }
 
 .content-wrapper .header-divider {
@@ -147,9 +200,14 @@ footer .content-wrapper {
 
  /* -------------------- Base Main Styles -------------------- */
 
+.features .content-wrapper {
+  
+}
+
 .features article {
   width: 55%;
   margin: 50px 0;
+  padding: 10px;
 }
 
 .features p {
@@ -165,7 +223,12 @@ footer p {
   margin: 0;
 }
 
+/* -------------------- PLACE HOLDERS -------------------- */
 
+.icon {
+  width: 133px;
+  height: 70px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -294,7 +357,7 @@ footer p {
     margin: 50px 0;
     display: flex;
     justify-content:;
-    flex-flow:;
+    flex-flow: row wrap;
   }
  
   aside .content-wrapper .form-description,
@@ -309,7 +372,7 @@ footer p {
     display: flex;
     justify-content:;
     align-items:;
-    flex-flow:;
+    flex-flow: row wrap;
     flex-basis:;
   }
  
