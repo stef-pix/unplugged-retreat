@@ -87,6 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*Group styles into one Global Styles section*/
 /* General Styles */
  
 html {
@@ -116,7 +117,7 @@ a {
   line-height: 1.3em;
   font-weight: 500;
   margin: 0;
-  padding: 50px 20px;
+  /*padding: 50px 20px;*/
 }
 
 h2, h3 {
@@ -222,19 +223,23 @@ footer p {
  /* -------------------- Base Main Styles -------------------- */
 
 .hero-area {
-  background: url('../img/hero-image.jpg');
-  background-color: #202322;
-  background-position: center;
+  background: url('../img/hero-image.jpg') center no-repeat #202322;
   background-size: cover;
   height: 500px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .features .content-wrapper {
-  background: url('../img/features-bg.png');
-  background-color: #202322;
-  background-position: center;
+  background: url('../img/features-bg.png') center no-repeat  #202322;
   background-size: cover;
   height: 1450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   margin: 0;
 }
 
