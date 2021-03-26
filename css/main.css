@@ -98,7 +98,6 @@ body {
   color: #e2e3ed;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em; 
-  text-align: left;
 }
  
 ul, 
@@ -126,7 +125,7 @@ h2, h3 {
   font-weight: 500;
   line-height: 1.3em;
   margin: 0;
-  padding: 50px 20px;
+  text-align: left;
 }
 
 h4 {
@@ -138,15 +137,16 @@ h4 {
 }
 
 p {
-  font-size: .9em; 
+  font-size: .9em;
+  margin: 0; 
 }
  
 img {
- 
+  width: 100%;
 }
  
 figure {
- 
+  margin: 0;
 }
  
 address {
@@ -154,7 +154,8 @@ address {
 }
  
 .content-wrapper {
- 
+   width: 100%;
+  margin: 0;
 }
 
  /* -------------------- Base Header - Footer Styles -------------------- */
@@ -167,48 +168,72 @@ footer {
   flex-flow: row wrap;
 }
 
-.content-wrapper {
-  width: 100%;
-  margin: 0px;
-}
-
-.content-wrapper .header-divider {
-  width: 100%;
-  margin: 0;
-}
-
 header {
-  padding: 15px 0;
+  height: 120px;
+  
 }
 header .content-wrapper {
+  height: 65px;
   display: flex;
   justify-content: center;
   align-items: center;  
   flex-flow: row wrap;
-  width: 100%;
-  margin: 0;
 }
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.header-divider {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  /*background-color: #3a3a3a;*/
+  margin: 0;
+  width: 100%;
+  height:1px;
+}
+
+.header-divider figure {
+  width: 100%;
+}
+
 
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
+  width: 50%;
+  height:54px;
   margin: 0;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  align-items: center;
   margin: 0;
+  padding:0;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-footer .social-icons p {
+footer {
+  height: 320px;
+}
+
+footer .social-icons figure {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 footer .content-wrapper {
@@ -223,19 +248,20 @@ footer p {
  /* -------------------- Base Main Styles -------------------- */
 
 .hero-area {
-  background: url('../img/hero-image.jpg') center no-repeat #202322;
+  background: url('../img/hero-image2.jpg') center no-repeat #202322;
   background-size: cover;
   height: 500px;
   display: flex;
-  justify-content: left;
-  align-items: center;
+  justify-content: start;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
-.features .content-wrapper {
-  background: url('../img/features-bg.png') center no-repeat  #202322;
-  background-size: cover;
-  height: 1450px;
+.hero-area h1 {
+  margin: 50px 20px;
+}
+
+.features {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,27 +269,92 @@ footer p {
   margin: 0;
 }
 
-.features h2 {
-
+.features .content-wrapper {
+  background: url('../img/camp.jpg') center no-repeat  #202322;
+  background-size: cover;
+  width: 100%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 17px;
 }
 
 .features article {
-  width: 55%;
-  margin: 50px 0;
-  padding: 10px;
+  padding:15px;
+  margin: 0;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+.features figure {
+  margin: 0;
+  padding: 10px;
 }
 
 .features p {
-  margin: 0;
+  margin: 19px;
+  padding: 20px;
 }
 
-.reviews .content-wrapper{
-  background-color: #2a423a;
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
+
+.reviews .content-wrapper {
+  background-color: #2a423a;
+  margin: 0;
+  width: 100%;
+  height: 610px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .reviews h3 {
-  width: 91%;
-  margin: 228px 0;
+  padding:10px 0;
+  margin:  0 20px;
+}
+
+.reviews figure {
+  width: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  padding: 10px 0;
+  
+}
+
+.reviews h4{
+  margin: 0 10px;
+  padding: 20px 10px;
+  width: 50%;
+   text-align: left;
+
+}
+
+.reviews p{
+  margin:0 20px;
+  text-align: left;
+   width: 88%;
+
 }
 
  /* -------------------- FORM -------------------- */
@@ -303,10 +394,6 @@ input[type=button] {
 
 /* -------------------- PLACE HOLDERS -------------------- */
 
-.icon {
-  width: 133px;
-  height: 70px;
-}
 
 /* ==========================================================================
    Helper classes
@@ -401,18 +488,31 @@ input[type=button] {
 
   .content-wrapper {
       max-width: 640px;
-      margin: 100px 0;
+      margin: 0;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2, h3 {
+    font-size: 2.25em;
+  }
+
+  h4 {
+    font-size: 1.5;
   }
 
   /* Header */
  
-  header {
-    justify-content: ;
-  }
  
   header .content-wrapper {
     width: 100%;
-    justify-content:;
+    justify-content: center;
+  }
+
+  header figure {
+    width: 40%;
   }
  
   header nav {
@@ -420,7 +520,8 @@ input[type=button] {
   }
  
   header nav ul {
-    justify-content:;
+    font-size: 1em;
+    justify-content: space-between;
   }
  
   .header-divider {
@@ -428,13 +529,16 @@ input[type=button] {
   }
  
   /* Hero Area */
+  .hero-area {
+    height: 600px;
+  }
  
   /* Aside */
 
   aside .content-wrapper { 
     margin: 50px 0;
     display: flex;
-    justify-content:;
+    justify-content: space-between;
     flex-flow: row wrap;
   }
  
@@ -446,10 +550,13 @@ input[type=button] {
  
   /* Features */
  
+  .features {
+    height: 860px;
+  }
   .features article {
     display: flex;
-    justify-content:;
-    align-items:;
+    align-items: center;
+    justify-content: space-between;
     flex-flow: row wrap;
     flex-basis:;
   }
@@ -459,6 +566,10 @@ input[type=button] {
   }
 
   /* Reviews */
+
+  .reviews figure {
+    width: 88%;
+  }
 
   .reviews article {
     display: flex;
