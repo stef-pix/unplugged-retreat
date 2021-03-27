@@ -284,8 +284,7 @@ footer p {
 }
 
 .features .content-wrapper {
-
-  margin: 0;
+  margin: 50px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,13 +292,12 @@ footer p {
 }
 
 .features h2 {
-  width: 88%;
-  margin: 40px ​32px 20px 20px;
+  margin-right: 18px;
+  margin-bottom: 32px;
 }
 
 .features article {
-  width: 54%;
-  margin: 0;
+  margin: 18px 52px;
   text-align: center;
 
   display: flex;
@@ -557,8 +555,12 @@ input[type=button] {
   /* Features */
 
   .features .content-wrapper {
-    width: 82%;
+    
     height: 860px;
+  }
+
+  .features h2 {
+    margin-right:0;
   }
 
   .features article {
