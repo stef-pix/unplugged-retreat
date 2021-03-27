@@ -125,7 +125,7 @@ h2, h3 {
   font-weight: 500;
   line-height: 1.3em;
   margin: 0;
-  text-align: left;
+  t
 }
 
 h4 {
@@ -206,17 +206,17 @@ header figure {
 
 header nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 50%;
+  width: 51%;
   height:54px;
   margin: 0;
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 0;
   padding:0;
@@ -225,8 +225,23 @@ header nav ul {
   text-transform: uppercase;
 }
 
+header nav ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+
 footer {
   height: 320px;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .social-icons figure {
@@ -236,11 +251,7 @@ footer .social-icons figure {
 
 }
 
-footer .content-wrapper {
-  width: 55%;
-  margin: 50px 0;
-}
-
+footer h4 
 footer p {
   margin: 0;
 }
@@ -262,28 +273,36 @@ footer p {
 }
 
 .features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  margin: 0;
-}
-
-.features .content-wrapper {
   background: url('../img/camp.jpg') center no-repeat  #202322;
   background-size: cover;
   width: 100%;
- 
+   height: 1450px;
+  margin: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.features .content-wrapper {
+
   margin: 0;
-  padding: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap
+}
+
+.features h2 {
+  width: 88%;
+  margin: 40px ​32px 20px 20px;
+  padding: 0;
 }
 
 .features article {
-  padding:15px;
+  width: 54%;
+  padding: 10px;
   margin: 0;
   text-align: center;
 
@@ -293,22 +312,20 @@ footer p {
   flex-flow: row wrap;
 }
 
-.features h2 {
-  margin: 0;
-  padding: 10px;
-}
-
 .features figure {
-  margin: 0;
-  padding: 10px;
+  margin: 16px;
+  padding:0 ;
 }
 
 .features p {
-  margin: 19px;
-  padding: 20px;
+  margin: 10px;
+  padding:0 ;
 }
 
 .reviews {
+  background-color: #2a423a;
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,9 +333,8 @@ footer p {
 }
 
 .reviews .content-wrapper {
-  background-color: #2a423a;
+  width: ;
   margin: 0;
-  width: 100%;
   height: 610px;
   padding: 20px 0;
   display: flex;
@@ -549,20 +565,20 @@ input[type=button] {
   }
  
   /* Features */
- 
-  .features {
+
+  .features .content-wrapper {
+    width: 82%;
     height: 860px;
   }
+
   .features article {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: row wrap;
-    flex-basis:;
+    flex-basis: 200px;
   }
  
-  .features .features-item-description {
-    width: 65%;
   }
 
   /* Reviews */
@@ -575,7 +591,11 @@ input[type=button] {
     display: flex;
     justify-content:;
   }
-    
+  
+  .reviews .content-wrapper {
+    width: 83%;
+  }
+
   .reviews article div {
     width: 100%;        
   }
