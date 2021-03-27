@@ -295,12 +295,10 @@ footer p {
 .features h2 {
   width: 88%;
   margin: 40px ​32px 20px 20px;
-  padding: 0;
 }
 
 .features article {
   width: 54%;
-  padding: 10px;
   margin: 0;
   text-align: center;
 
@@ -312,7 +310,6 @@ footer p {
 
 .features figure {
   margin: 16px;
-  padding:0 ;
 }
 
 .features p {
@@ -333,7 +330,6 @@ footer p {
 .reviews .content-wrapper {
   width: ;
   margin: 0;
-  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,7 +337,6 @@ footer p {
 }
 
 .reviews h3 {
-  padding:10px 0;
   margin:  0 20px;
 }
 
@@ -351,13 +346,11 @@ footer p {
   justify-content: center;
   align-items: center;
   margin: 0 20px;
-  padding: 10px 0;
   
 }
 
 .reviews h4{
   margin: 0 10px;
-  padding: 20px 10px;
   width: 50%;
    text-align: left;
 
