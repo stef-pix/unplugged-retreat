@@ -116,7 +116,6 @@ a {
   line-height: 1.3em;
   font-weight: 500;
   margin: 0;
-  /*padding: 50px 20px;*/
 }
 
 h2, h3 {
@@ -125,7 +124,6 @@ h2, h3 {
   font-weight: 500;
   line-height: 1.3em;
   margin: 0;
-  t
 }
 
 h4 {
@@ -133,7 +131,6 @@ h4 {
   font-size: 1.2em;
   font-weight: 500;
   margin: 0;
-  padding: 10px;
 }
 
 p {
@@ -154,8 +151,11 @@ address {
 }
  
 .content-wrapper {
-   width: 100%;
+  width: 100%;
   margin: 0;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
  /* -------------------- Base Header - Footer Styles -------------------- */
@@ -203,7 +203,7 @@ header figure {
 
 
 header nav {
-   width: 51%;
+  width: 51%;
   margin: 0;
 
   display: flex;
@@ -236,8 +236,6 @@ footer {
 }
 
 footer .content-wrapper {
-  width: 55%;
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,7 +253,7 @@ footer p {
   margin: 0;
 }
 
- /* -------------------- Base Main Styles -------------------- */
+ /* -------------------- Homepage Styles -------------------- */
 
 .hero-area {
   background: url('../img/hero-image2.jpg') center no-repeat #202322;
@@ -285,10 +283,6 @@ footer p {
 
 .features .content-wrapper {
   margin: 50px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap
 }
 
 .features h2 {
@@ -312,12 +306,11 @@ footer p {
 
 .features p {
   margin: 10px;
-  padding:0 ;
 }
 
 .reviews {
   background-color: #2a423a;
-  width: 100%;
+  margin:0;
 
   display: flex;
   justify-content: center;
@@ -325,40 +318,33 @@ footer p {
   flex-flow: row wrap;
 }
 
-.reviews .content-wrapper {
-  width: ;
-  margin: 0;
+.reviews .article {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%                                                                                                                                                                                                                                                                                                                                                                   ;
 }
 
 .reviews h3 {
-  margin:  0 20px;
+  margin: 50px 20px 25px 20px;
 }
 
 .reviews figure {
   width: 88%;
+  margin: 0 20px; 
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 20px;
-  
+  flex-flow: row wrap;
 }
 
 .reviews h4{
-  margin: 0 10px;
-  width: 50%;
-   text-align: left;
-
+  margin: 20px;
 }
 
 .reviews p{
-  margin:0 20px;
-  text-align: left;
-   width: 88%;
-
+  margin: 20px;
 }
 
  /* -------------------- FORM -------------------- */
@@ -504,11 +490,10 @@ input[type=button] {
   }
 
   h4 {
-    font-size: 1.5;
+    font-size: 1.5em;
   }
 
   /* Header */
- 
  
   header .content-wrapper {
     width: 100%;
@@ -548,50 +533,35 @@ input[type=button] {
  
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {        
-    width: 100%         
+    width: 100%;       
     margin: 0;
   }
  
   /* Features */
 
   .features .content-wrapper {
-    
-    height: 860px;
   }
 
   .features h2 {
-    margin-right:0;
   }
 
-  .features article {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
+  .features .article {
     flex-basis: 200px;
-  }
- 
   }
 
   /* Reviews */
 
+  .reviews h3 {
+
+  }
   .reviews figure {
-    width: 88%;
+    width: 41%;
   }
 
-  .reviews article {
-    display: flex;
-    justify-content:;
-  }
+  .reviews p {
   
-  .reviews .content-wrapper {
-    width: 83%;
   }
 
-  .reviews article div {
-    width: 100%;        
-  }
- 
   /* Footer */
 
   footer .content-wrapper {
@@ -618,9 +588,9 @@ input[type=button] {
   ========================================================================== */
  
   .mission-content {
-    display:
+    display:;
     justify-content: space-between;
-    align-items: 
+    align-items: ;
   }
  
   .mission-content p {
@@ -628,11 +598,11 @@ input[type=button] {
   }
  
   .contact-section .content-wrapper h2 {
-    width:
+    width:;
   }
  
   .contact-content {
-    display:
+    display:;
     justify-content:;
     align-items:;
   }
