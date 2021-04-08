@@ -188,7 +188,7 @@ header figure {
 }
 
 .header-divider {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
@@ -203,7 +203,7 @@ header figure {
 
 
 header nav {
-  width: 51%;
+  width: 60%;
   margin: 0;
 
   display: flex;
@@ -236,6 +236,7 @@ footer {
 }
 
 footer .content-wrapper {
+  width: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,9 +249,10 @@ footer .social-icons figure {
 
 }
 
-footer h4 
+footer h4, 
 footer p {
   margin: 0;
+  text-align: center;
 }
 
  /* -------------------- Homepage Styles -------------------- */
@@ -293,7 +295,6 @@ footer p {
 .features article {
   margin: 18px 52px;
   text-align: center;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -545,7 +546,7 @@ input[type=button] {
   .features h2 {
   }
 
-  .features .article {
+  .features article {
     flex-basis: 200px;
   }
 
@@ -559,7 +560,7 @@ input[type=button] {
   }
 
   .reviews p {
-  
+
   }
 
   /* Footer */
