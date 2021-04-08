@@ -147,12 +147,13 @@ figure {
 }
  
 address {
- 
+ text-align: center;
 }
  
 .content-wrapper {
   width: 100%;
   margin: 0;
+  display:flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
@@ -170,6 +171,7 @@ footer {
 
 header {
   height: 120px;
+  padding: 15px 0;
   
 }
 header .content-wrapper {
@@ -214,20 +216,19 @@ header nav {
 }
 
 header nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
  
   font-size: 1.2em;
   font-weight: bold;
   text-transform: uppercase;
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header nav ul li {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
  
 }
 
@@ -237,6 +238,7 @@ footer {
 
 footer .content-wrapper {
   width: 55%;
+  margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,7 +276,7 @@ footer p {
 .features {
   background: url('../img/camp.jpg') center no-repeat  #202322;
   background-size: cover;
-  width: 100%;
+  
   margin: 0;
 
   display: flex;
@@ -295,10 +297,7 @@ footer p {
 .features article {
   margin: 18px 52px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+
 }
 
 .features figure {
@@ -497,8 +496,7 @@ input[type=button] {
   /* Header */
  
   header .content-wrapper {
-    width: 100%;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   header figure {
@@ -541,12 +539,21 @@ input[type=button] {
   /* Features */
 
   .features .content-wrapper {
+    width: 83%;
   }
 
+
   .features h2 {
+
+    margin:0;
   }
 
   .features article {
+
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
     flex-basis: 200px;
   }
 
