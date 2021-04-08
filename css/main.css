@@ -350,10 +350,17 @@ footer p {
  /* -------------------- FORM -------------------- */
 aside {
   background-color: #527158;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-aside .form {
-  margin-top: 0px;
+aside .content-wrapper {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
  
 input[type=text] {
@@ -378,11 +385,7 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-.form {
-  padding: 10px;
-}
 
-/* -------------------- PLACE HOLDERS -------------------- */
 
 
 /* ==========================================================================
@@ -524,18 +527,29 @@ input[type=button] {
   /* Aside */
 
   aside .content-wrapper { 
-    margin: 50px 0;
+    margin: 0;
+    padding: 50px 0;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
   }
  
+  aside .content-wrapper .form input {
+  height: 40px;
+  padding: 10px 0;
+ }
+
+aside .content-wrapper h4{
+  margin: 15px 0;
+}
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {        
-    width: 100%;       
-    margin: 0;
+    width: 45%;    
+   margin: 0;
   }
+
  
+
   /* Features */
 
   .features .content-wrapper {
