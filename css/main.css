@@ -318,13 +318,6 @@ footer p {
   flex-flow: row wrap;
 }
 
-.reviews .article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 100%                                                                                                                                                                                                                                                                                                                                                                   ;
-}
 
 .reviews h3 {
   margin: 50px 20px 25px 20px;
