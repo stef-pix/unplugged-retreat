@@ -310,35 +310,30 @@ footer p {
 
 .reviews {
   background-color: #2a423a;
-  margin:0;
-
-  display: flex;
-  justify-content: center;
+    display: flex;
   align-items: center;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
 
-.reviews h3 {
-  margin: 50px 20px 25px 20px;
+.reviews  h3 {
+  width: 100%;
+  margin: 50px 20px;
 }
 
 .reviews figure {
   width: 88%;
+
   margin: 0 20px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
-.reviews h4{
+.reviews h4,
+.reviews  p
+{
   margin: 20px;
 }
 
-.reviews p{
-  margin: 20px;
-}
 
  /* -------------------- FORM -------------------- */
 aside {
@@ -566,15 +561,45 @@ aside .content-wrapper h4{
 
   /* Reviews */
 
-  .reviews h3 {
+.reviews .content-wrapper {
+  margin: 100px 0;
+}
+.reviews article{
+  width: 47%;
+  margin:0 10px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row-wrap;
+}
 
+
+  .reviews h3 {
+    
+   margin: 0 0 20px 0;
+
+   
   }
+
   .reviews figure {
-    width: 41%;
+    width: 49%;
+    margin: 0; 
+}
+
+
+    .reviews h4 {
+ font-size: 1.5em; 
+ line-height: 1.2em;  
+margin: 0;
+
   }
 
   .reviews p {
+     font-size: .8em; 
+     line-height: 1.4em;
+     
+    
 
+margin: 15px 0;
   }
 
   /* Footer */
