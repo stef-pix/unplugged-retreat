@@ -147,6 +147,8 @@ figure {
 }
  
 address {
+  font-size: .9em;
+  font-style: normal;
  text-align: center;
 }
  
@@ -359,10 +361,43 @@ input[type=button] {
 
 /* -------------------- ABOUT PAGE -------------------- */
 
-.mission,
-.contact-section  {
+.mission {
   flex-flow: row wrap;
   background-color: #527158;
+}
+
+.mission .mission-content {
+  margin: 30px 0;
+}
+.mission h2,
+.mission p {
+  margin: 20px;
+}
+
+.contact-section  {
+  flex-flow: row wrap;
+  background-color: #2a423a;
+}
+
+.contact-wrapper {
+  padding: 30px 20px;
+}
+.contact-section h3 {
+  margin: 20px 0;
+}
+
+.contact-section .contact-general,
+ .contact-section .contact-chat{
+  margin: 15px 0;
+}
+
+.contact-section h4 {
+ 
+}
+
+.contact-section address {
+  text-align: left;
+ 
 }
 
 /* -------------------- FAQ PAGE -------------------- */
