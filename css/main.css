@@ -240,12 +240,7 @@ footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-footer .social p{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer h4{
@@ -418,18 +413,29 @@ input[type=button] {
 }
 
 .faqs .content-wrapper {
+  padding: 25px 0;
   flex-flow: row wrap; 
 }
 
-.question-answer {
-  margin: 20px;
+.faqs h3 {
+  margin: 25px 20px;
 }
+
+.faqs p {
+  text-align: left;
+    padding: 15px 20px;
+}
+
+
 
 .question {
     font-size: 1.1em;
-  font-weight: 500;
-  margin: 15px 0;
+  font-weight: 600;
+
 }
+
+
+
 
 /* ==========================================================================
    Helper classes
