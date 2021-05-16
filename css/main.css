@@ -713,6 +713,13 @@ margin: 15px 0;
   .mission-content p {
     width: 
   }
+
+  .map figure {
+
+
+    padding-bottom: 46%; 
+
+}
  
   .contact-section .content-wrapper h2 {
     width:;
@@ -783,6 +790,12 @@ margin: 15px 0;
   .contact-section .content-wrapper h2 {
     width: 
   }
+    .map figure {
+
+
+    padding-bottom: 59%; 
+
+}
  
   /* ==========================================================================
   FAQ Page
