@@ -292,8 +292,9 @@ footer h4{
 
 }
 
-.features figure {
-  margin: 16px;
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 10px;
 }
 
 .features p {
@@ -613,28 +614,23 @@ aside .content-wrapper h4{
    margin: 0;
   }
 
- 
-
   /* Features */
 
   .features .content-wrapper {
     width: 83%;
   }
 
-
   .features h2 {
-
     margin:0;
   }
 
-  .features article {
-
-      display: flex;
+.features article {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-    flex-basis: 200px;
-  }
+  flex-basis: 200px;
+}
 
   /* Reviews */
 
